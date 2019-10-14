@@ -1,0 +1,7 @@
+# Group 1
+User-agent: *
+Allow: /
+
+Sitemap: https://rosentholcurtis.com/sitemap.xml
+
+
