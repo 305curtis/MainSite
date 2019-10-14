@@ -198,7 +198,16 @@
 													<span><label>Birthday:</label> 10.09.1985</span>
 												</li>
 												<li>
-													<span><label>Age:</label> 34</span>
+													<span><label>Age:</label> <script type="text/javascript">function getAge(dateString) {
+														var today = new Date();
+														var birthDate = new Date(dateString);
+														var age = today.getFullYear() - birthDate.getFullYear();
+														var m = today.getMonth() - birthDate.getMonth();
+														if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+															age--;
+														}
+														return age;
+													}document.write(getAge("1985/10/09"));</script></span>
 												</li>
 												<li>
 													<span><label>City:</label> Opa-locka, FL, USA</span>
